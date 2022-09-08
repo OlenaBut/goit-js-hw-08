@@ -23,8 +23,9 @@ function onSubmitForm(e) {
   const email = document.querySelector('.feedback-form input');
   const message = document.querySelector('.feedback-form textarea');
   if (data) {
-    email.value = data.email;
-    message.value = data.message;
+    email.value = data.email || '';
+    message.value = data.message || '';
   }
+  
 })();
 
